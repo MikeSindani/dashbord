@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-dashbord.css">
+
+    
+    <script src="https://kit.fontawesome.com/e1d1ed83e9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <div class="band-dash">
+        <div class="dash-milieu">
+            <a href="">
+                <img class="dash-profil" src="img/pers.jpg" width="120" height="120" alt="">
+            </a>
+            <div class="dash-profil-text">
+                <h3 class="dash-username">Mike SindanI</h3>
+                <P class="dash-useremail">mikems@live.fr</P>
+                <div class="dash-socialmedia">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                </div>  
+            </div>  
+            <button class="btn-modifier">Modifier</button>      
+        </div>
+    </div>
+
+    <div class="dash-contaneur">
+        
+        <div onclick="overlayFunction(event)" class="overlay"></div>
+        <div class="container">
+        <div class="wrapper">
+            <button onclick="buttonFunction(event)" class="button"> <i class="fa fa-plus" aria-hidden="true"></i> Ajouter une Annonce </button>
+            
+            <div class="modal">
+            <form>
+                <input type="text" name="titre" placeholder="Titre">
+                <div>
+                    <label for="Categorie">Categorie</label>
+                    <br>
+                    <select id="Categorie" name="Categorie">
+                        <option value="volvo">Agriculture</option>
+                        <option value="saab">Elevage</option>
+                    </select>
+                </div>   
+                <textarea name="" id="" cols="30" rows="5">Description</textarea>
+                <input type="text" name="password" placeholder="Lieu">
+                <input class="submit" type="submit" value="Annoncer">
+            </form>
+            <p onclick="overlayFunction(event)" class="close">Fermer</p>
+            </div>
+
+        </div>
+        </div>
+
+
+        <div class="tabButton">
+            <button class="tablink" onclick="openPage('Home', this)">VosFavoris</button>
+            <button class="tablink" onclick="openPage('News', this)" id="defaultOpen">VosAnnonces</button>
+            <button class="tablink" onclick="openPage('Contact', this)">VosAbonnement</button>
+        </div>
+       
+
+        <div id="Home" class="tabcontent">
+        <h1 class="text" >Vos Favoris</h1>
+        <p>Home is where the heart is..</p>
+        </div>
+
+        <div id="News" class="tabcontent">
+        <h1 class="text">Vos Annonces</h1>
+        <p>Some news this fine day!</p> 
+        <div class="conteneur-card">
+            <div class="card-long">
+                <div class="thumbnail">
+                    <img src="img/champ.jpg" alt="" class="card-image">
+                </div>
+                <div class="contenain">
+                    <h2 class="titre">card </h2>
+                    <p class="subtitle">Disponible</p>
+                    <p class="description"> Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Nemo rem doloremque aspernatur 
+                        modi officiis impedit inventore fugit quidem a repudiandae 
+                        voluptatem reiciendis,
+                        magni accusantium necessitatibus illum cum atque, vero odit. 
+                    </p>
+                    <div class="element">
+                        <p class="vu"><i class="fa fa-users" aria-hidden="true"> Mike</i></p>
+                        <p class="vu"><i class="fas fa-clock    "></i> 2 minutes</p>
+                        <p class="vu"> <i class="fa fa-map-marker" aria-hidden="true"> kasumbalesa</i></p>  
+                    </div> 
+                </div>
+                <div  class="more">
+                    <a href="">Voir</a>
+                </div>
+                <div  class="more" id="modifier">
+                    <a href="">Modifier</a>
+                </div>
+                <div  class="more" id="supprimer">
+                    <a href="">Supprimer</a>
+                </div>
+            </div>
+            <div class="card-long">
+                <div class="thumbnail">
+                    <img src="img/ferme.jpg" alt="" class="card-image">
+                </div>
+                <div class="contenain">
+                    <h2 class="titre">card </h2>
+                    <p class="subtitle">Disponible</p>
+                    <p class="description"> Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Nemo rem doloremque aspernatur 
+                        modi officiis impedit inventore fugit quidem a repudiandae 
+                        voluptatem reiciendis,
+                        magni accusantium necessitatibus illum cum atque, vero odit. 
+                    </p>
+                    <div class="element">
+                        <p class="vu"><i class="fa fa-users" aria-hidden="true"> Mike</i></p>
+                        <p class="vu"><i class="fas fa-clock    "></i> 2 minutes</p>
+                        <p class="vu"> <i class="fa fa-map-marker" aria-hidden="true"> kasumbalesa</i></p>  
+                    </div> 
+                </div>
+                <div  class="more">
+                    <a href="">Voir</a>
+                </div>
+                <div  class="more" id="modifier">
+                    <a href="">Modifier</a>
+                </div>
+                <div  class="more" id="supprimer">
+                    <a href="">Supprimer</a>
+                </div>
+            </div>
+    
+        </div>
+        
+        </div>
+
+        <div id="Contact" class="tabcontent">
+        <h1 class="text">Vos Abonnement</h1>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+
+
+    </div>
+   
+    <div class="dash-flotant-haut">
+        <img class="dash-flotant" src="img/pers.jpg" width="30" height="30" alt="">
+        <P class="dash-flotant-username">
+            Mike Sindani
+        </P>
+        <button class="dash-entre">Dashbord</button>
+    </div>
+    <script src="dash-js.js"></script>
+</body>
+</html>

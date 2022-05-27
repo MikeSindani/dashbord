@@ -1,0 +1,143 @@
+/* WRAPPER */
+  
+.wrapper{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -300px;
+    max-width: 600px;
+    width: 600px;
+    z-index: 500;
+  }
+  
+  /* OVERLAY */
+  
+  .overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 10;
+    background-color: rgba(0,0,0,0);
+  }
+  
+  .overlay.overlay-modal-showing{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* BUTTON */
+  .button{
+    position: absolute;
+    top: 0;
+    left: 180px;
+  }
+  .button, .submit{
+    outline: none;
+    border: none;
+   /* margin: 30px auto 0 auto;*/
+    display: inherit;
+    background-color: tomato;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.5vw 7vh;
+    border-radius: 30px;
+  }
+  
+  .button.button-modal-showing{
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    cursor: auto;
+    padding: 18px;
+    border-radius: 0;
+    border: none;
+  }
+  
+  /* MODAL */
+  
+  .modal form .submit{
+    margin-top: 20px;
+    
+  }
+  
+  
+  .modal{
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transform: scale(0);
+    z-index: -1;
+    
+  }
+  
+  .modal.is-active{
+    display: block;
+    opacity: 1;
+    margin-top: -20px;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    z-index: 500;
+  }
+  
+  .modal form input,textarea{
+    display: block;
+    margin: 15px auto;
+  }
+  
+  .modal form input[type="text"], .modal form input[type="email"],select, .modal form textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: black;
+    background-color: #eee;
+    width: 55%;
+    
+  }
+  select,label[for="Categorie"]{
+    position: relative;
+    left: 22%;
+  }
+  option{
+    font-size: 16px;
+    padding: 10px;
+
+  }
+  
+  .close{
+    color: #aaa;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    &:hover{
+      color: tomato;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .wrapper{
+      margin-left: -150px;
+      width: 300px;
+      z-index: 500;
+    }
+    .button{
+      left: 10px;
+    }
+    /* OVERLAY */
+    .overlay{
+      height: 1300px;
+    }
+  }
+  

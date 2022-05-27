@@ -1,0 +1,85 @@
+body{
+    position: relative;
+    top: 50px;
+     margin: 0;
+     padding: 0;
+     background-color: #f2f2f2;
+     font-family: sans-serif;
+     .dash-contaneur{
+       .text{
+         position:relative;
+         top:-20px;
+       }
+       /* tab button */ 
+       .tabButton{
+         position: relative;
+         top: 80px;
+         left: 100px;
+         display: flex;
+         flex-direction: row;
+         z-index: 700;
+       }
+       /* Style tab links */
+        .tablink {
+          color: black;
+          font-weight: bold;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding-top: 14px;
+          padding-bottom: 14px;
+          padding-left: 20px;
+          padding-right: 100px;
+          text-align: center;
+          font-size: 17px;
+          width: 25%;
+          transition: all .5s;
+        }
+    
+        .tablink:hover {
+          background-color: #09112e;
+          color: white;
+        }
+    
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+          color: Black;
+          display: none;
+          padding: 100px 20px;
+          height: 100%;
+        }
+    
+    }
+ }
+ @media screen and (max-width: 800px){
+     body{
+         .dash-contaneur{
+                    /* tab button */ 
+                .tabButton{
+                position: relative;
+                top: 80px;
+                left: 40px;
+                display: flex;
+                flex-direction: row;
+                z-index: 700;
+            }
+                /* Style tab links */
+                .tablink {
+                color: black;
+                font-weight: bold;
+                width: 25%;
+                padding-left: 5px;
+                padding-right: 30px;
+                transition: all .5s;
+                }
+
+         }
+     }
+    
+  
+    
+
+}
+
+
