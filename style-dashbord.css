@@ -148,6 +148,20 @@ body {
   padding: 0;
 }
 
+.dash_control {
+  background-color: #000000;
+}
+
+.dash_control #modifier {
+  background-color: #000000;
+  height: 20%;
+}
+
+.dash_control #supprimer {
+  background-color: red;
+  height: 20%;
+}
+
 .conteneur-card {
   display: -webkit-box;
   display: -ms-flexbox;
