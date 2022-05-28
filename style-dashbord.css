@@ -522,7 +522,8 @@ body .dash-contaneur .tabcontent {
 
 .band-dash {
   padding: 20px 0;
-  background-color: #09112e;
+  background: #ff7676;
+  background: linear-gradient(169deg, #ff7676 0%, #16224c 42%);
   margin: 0 100px;
   margin-top: 20px;
   -webkit-box-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.4);
@@ -721,7 +722,6 @@ p, li, a {
 @media screen and (max-width: 800px) {
   .band-dash {
     padding: 20px 0;
-    background-color: #09112e;
     margin: 0 0;
     margin-top: 20px;
     -webkit-box-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.4);
