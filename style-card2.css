@@ -199,9 +199,11 @@ body {
     font-size: 12px;
   }
   .card-long .contenain .description {
+  
     padding: 0 1px 0 1px;
     text-overflow: ellipsis;
     font-size: 12px;
+
   }
 }
 /*# sourceMappingURL=style-card2.css.map */

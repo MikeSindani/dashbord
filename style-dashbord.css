@@ -192,6 +192,7 @@ body {
   background-color: white;
   font-family: sans-serif;
   margin: 10px;
+  cursor: pointer;
 }
 
 .conteneur-card
@@ -308,8 +309,15 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .dash_control #modifier {
+    height: 23%;
+  }
+  .dash_control #supprimer {
+    height: 23%;
+  }
   .card-long {
     width: 80vw;
+    height: 46vh;
   }
   .card-long .contenain .titre {
     padding: 0 2px 0 2px;
@@ -330,7 +338,7 @@ body {
     overflow: hidden;
   }
   .card-long .thumbnail img {
-    width: 120%;
+    width: 130%;
   }
   .card-long .contenain .element .vu {
     font-size: 9px;
@@ -473,7 +481,7 @@ body .dash-contaneur .tablink {
   padding-left: 20px;
   padding-right: 100px;
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
   width: 25%;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -489,6 +497,11 @@ body .dash-contaneur .tabcontent {
   display: none;
   padding: 100px 20px;
   height: 100%;
+}
+
+body .dash-contaneur .tabcontent > p {
+  text-align: center;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 800px) {
@@ -540,6 +553,7 @@ body .dash-contaneur .tabcontent {
 .band-dash .dash-milieu .dash-profil-text {
   text-align: center;
   color: white;
+  margin-bottom: 30px;
 }
 
 .band-dash .dash-milieu .dash-profil-text .dash-useremail {
