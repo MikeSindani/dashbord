@@ -142,6 +142,384 @@ option {
   }
 }
 
+.part {
+  display: none;
+}
+
+.modal-connexion {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
+  left: 0;
+  top: 60px;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow-x: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/ opacity */
+  /* Modal Content */
+}
+
+.modal-connexion .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+  height: 500px;
+  -webkit-box-shadow: 0 4px 8px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+          animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  /* Modal Header */
+  /* Modal Body */
+}
+
+.modal-connexion .modal-content .modal-header {
+  background-color: white;
+  color: black;
+}
+
+.modal-connexion .modal-content .modal-header .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px;
+}
+
+.modal-connexion .modal-content .modal-header .close .text-search {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  left: 25%;
+}
+
+.modal-connexion .modal-content .modal-header .close .fermer {
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+.modal-connexion .modal-content .modal-header .close .fermer:hover {
+  color: tomato;
+}
+
+.modal-connexion .modal-content .modal-body {
+  position: relative;
+}
+
+.modal-connexion .modal-content .modal-body .text {
+  text-align: center;
+}
+
+.modal-connexion .modal-content .modal-body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.modal-connexion .modal-content .modal-body form .isactived {
+  display: block;
+}
+
+.modal-connexion .modal-content .modal-body form .isactived-item {
+  color: black !important;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.modal-connexion .modal-content .modal-body form .part_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  left: 25%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.modal-connexion .modal-content .modal-body form .part_item .item {
+  color: #727272;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.modal-connexion .modal-content .modal-body form .part {
+  background-color: yellow;
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  width: 80%;
+}
+
+.modal-connexion .modal-content .modal-body form .part select[id="cat"] {
+  margin-left: -30px;
+}
+
+.modal-connexion .modal-content .modal-body form .part input[type="text"] {
+  border: none;
+  color: black;
+  background-color: #f3f3f3;
+  font-size: 16px;
+  width: 100%;
+  padding: 0.5vw 1vh;
+  margin-top: 10px;
+}
+
+.modal-connexion .modal-content .modal-body form .part input[type="number"] {
+  border: none;
+  color: black;
+  background-color: #f3f3f3;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.5vw 2vh;
+  margin-top: 10px;
+}
+
+.modal-connexion .modal-content .modal-body form .part textarea {
+  border: none;
+  color: black;
+  background-color: #f3f3f3;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.5vw 2vh;
+  margin-top: 10px;
+}
+
+.modal-connexion .modal-content .modal-body form .part input[type="submit"] {
+  border-radius: 20px;
+  border: none;
+  background-color: tomato;
+  color: white;
+  width: 150px;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 5px 15px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.modal-connexion .modal-content .modal-body form .part input[type="submit"]:hover {
+  background-color: transparent;
+  color: tomato;
+}
+
+.modal-connexion .modal-content .modal-body form .part .btn {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  top: 75px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.modal-connexion .modal-content .modal-body form .part .btn button {
+  border-radius: 20px;
+  border: 1px solid #09112e;
+  background-color: #09112e;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 60px;
+  margin: 0 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.modal-connexion .modal-content .modal-body form .part_info .btn {
+  top: 25px;
+}
+
+.modal-connexion .modal-content .modal-body form .annoncer_btn {
+  border-radius: 20px;
+  background-color: transparent;
+  text-align: center;
+  color: black;
+  width: 150px;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 5px 15px;
+  position: relative;
+  top: -28px;
+  left: 190px;
+  translate: all .5s;
+}
+
+.modal-connexion .modal-content .modal-body form .annoncer_btn:hover {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.modal-connexion .modal-content .modal-body form .text a {
+  color: tomato;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .modal-connexion .modal-content {
+    width: 80%;
+    height: 450px;
+    /* Modal Header */
+    /* Modal Body */
+  }
+  .modal-connexion .modal-content .modal-header .close .text-search {
+    font-size: 16px;
+  }
+  .modal-connexion .modal-content .modal-header .close .fermer {
+    font-size: 40px;
+  }
+  .modal-connexion .modal-content .modal-body form .part_item {
+    position: relative;
+    top: -7%;
+    left: 10%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .modal-connexion .modal-content .modal-body form .part_item .item {
+    font-size: 15px;
+  }
+  .modal-connexion .modal-content .modal-body form .part {
+    width: 75%;
+    left: 10%;
+  }
+  .modal-connexion .modal-content .modal-body form .part label {
+    font-size: 14px;
+  }
+  .modal-connexion .modal-content .modal-body form .part select[id="cat"] {
+    margin-left: -30px;
+  }
+  .modal-connexion .modal-content .modal-body form .part input[type="text"] {
+    width: 100%;
+    padding: 2vw 3vh;
+    margin-top: 10px;
+  }
+  .modal-connexion .modal-content .modal-body form .part input[type="number"] {
+    width: 100%;
+    font-size: 16px;
+    padding: 2vw 3vh;
+  }
+  .modal-connexion .modal-content .modal-body form .part textarea {
+    width: 100%;
+    font-size: 12px;
+    padding: 0.5vw 2vh;
+    margin-top: 10px;
+  }
+  .modal-connexion .modal-content .modal-body form .part input[type="submit"] {
+    border-radius: 20px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    width: 150px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 5px 15px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  .modal-connexion .modal-content .modal-body form .part input[type="submit"]:hover {
+    background-color: transparent;
+    color: tomato;
+  }
+  .modal-connexion .modal-content .modal-body form .part .btn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    left: -5%;
+  }
+  .modal-connexion .modal-content .modal-body form .part .btn button {
+    margin: 0 5px;
+    padding: 1.5vw 2.5vh;
+    font-size: 12px;
+  }
+  .modal-connexion .modal-content .modal-body form .part_photo {
+    display: none;
+  }
+  .modal-connexion .modal-content .modal-body form .annoncer_btn {
+    border-radius: 20px;
+    background-color: transparent;
+    text-align: center;
+    color: black;
+    width: 150px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 5px 15px;
+    position: relative;
+    top: -28px;
+    left: 190px;
+    translate: all .5s;
+  }
+  .modal-connexion .modal-content .modal-body form .annoncer_btn:hover {
+    background-color: black;
+    border: none;
+    color: white;
+  }
+  .modal-connexion .modal-content .modal-body form .text a {
+    color: tomato;
+    text-decoration: none;
+  }
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 body {
   background-color: #f2f2f2;
   margin: 0;
@@ -333,12 +711,12 @@ body {
     font-size: 11px;
   }
   .card-long .thumbnail {
-    min-width: 150px;
-    min-height: 150px;
+    min-width: 140px;
+    min-height: 140px;
     overflow: hidden;
   }
   .card-long .thumbnail img {
-    width: 130%;
+    width: 200%;
   }
   .card-long .contenain .element .vu {
     font-size: 9px;
@@ -487,11 +865,6 @@ body .dash-contaneur .tablink {
   transition: all .5s;
 }
 
-body .dash-contaneur .tablink:hover {
-  background-color: #09112e;
-  color: white;
-}
-
 body .dash-contaneur .tabcontent {
   color: Black;
   display: none;
@@ -501,18 +874,21 @@ body .dash-contaneur .tabcontent {
 
 body .dash-contaneur .tabcontent > p {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 800px) {
   body .dash-contaneur {
     /* tab button */
-    /* Style tab links */
   }
-  body .dash-contaneur .tabButton {
+  body .dash-contaneur .tab-container {
+    width: 80%;
+  }
+  body .dash-contaneur .tab-container .tabButton {
+    background-color: yellow;
     position: relative;
-    top: 80px;
-    left: 40px;
+    left: -10px;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -521,11 +897,13 @@ body .dash-contaneur .tabcontent > p {
         -ms-flex-direction: row;
             flex-direction: row;
     z-index: 700;
+    /* Style tab links */
   }
-  body .dash-contaneur .tablink {
+  body .dash-contaneur .tab-container .tabButton .tablink {
     color: black;
     font-weight: bold;
-    width: 25%;
+    width: 70%;
+    font-size: 14px;
     padding-left: 5px;
     padding-right: 30px;
     -webkit-transition: all .5s;

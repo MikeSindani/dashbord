@@ -28,46 +28,111 @@
                     <i class="fa fa-telegram" aria-hidden="true"></i>
                 </div>  
             </div>  
-            <button class="btn-modifier">Modifier</button>      
+            <button class="btn-modifier">Settings</button>      
         </div>
     </div>
 
     <div class="dash-contaneur">
+
         
-        <div onclick="overlayFunction(event)" class="overlay"></div>
-        <div class="container">
-        <div class="wrapper">
-            <button onclick="buttonFunction(event)" class="button"> <i class="fa fa-plus" aria-hidden="true"></i> Ajouter une Annonce </button>
-            
-            <div class="modal">
-            <form>
-                <input type="text" name="titre" placeholder="Titre">
-                <div>
-                    <label for="Categorie">Categorie</label>
-                    <br>
-                    <select id="Categorie" name="Categorie">
-                        <option value="volvo">Agriculture</option>
-                        <option value="saab">Elevage</option>
-                    </select>
-                </div>   
-                <textarea name="" id="" cols="30" rows="5">Description</textarea>
-                <input type="text" name="password" placeholder="Lieu">
-                <input class="submit" type="submit" value="Annoncer">
-            </form>
-            <p onclick="overlayFunction(event)" class="close">Fermer</p>
-            </div>
-
-        </div>
-        </div>
-
-
-        <div class="tabButton">
-            <button class="tablink" onclick="openPage('Home', this)">VosFavoris</button>
-            <button class="tablink" onclick="openPage('News', this)" id="defaultOpen">VosAnnonces</button>
-            <button class="tablink" onclick="openPage('Contact', this)">VosAbonnement</button>
-        </div>
        
+        <div class="container">
+            <div class="wrapper">
+                <button id="btn-modal-annonce" class="button"> <i class="fa fa-plus" aria-hidden="true"></i> Ajouter une Annonce </button>
+            </div>
+        </div>
 
+        <div class="modal-connexion" id="myModal">
+            <!-- Modal content -->
+            <div  class="modal-content">
+                <div class="modal-header">
+                    <span class="close"> 
+                        <span class="fermer">&times;</span>
+                        <span class="text-search">Ajouter Une Annonce</span>
+                    </span>
+                </div>
+                <div class="modal-body">
+                        <p class="text social">
+                            Connectez-Vous avec Vos Reseaux Preferer.
+                        </p>
+                        <form action="">
+                            <div class="part_item">
+                                <div class="item " id="item1">Details</div>
+                                <div class="item isactived-item" id="item2">Prix&Delai</div>
+                                <div class="item" id="item3">Photos</div>
+                            </div>
+                            <div class="part part_info ">
+                                <input type="text" placeholder="Titre" name="titre">
+                                <label for="cat">Categories:</label>
+                                <select id="cat" name="cat">
+                                    <option value="elevage">Elevage</option>
+                                    <option value="saab">Agriculture</option>
+                                </select>                           
+                                <input type="text" placeholder="Produit" name="produit">
+                                <input type="number" placeholder="Quatite" name="quatite">
+                                <textarea rows="4" cols="50" name="descp"></textarea>
+                                <div class="btn">
+                                    <button type="button">Suivant</button>
+                                </div>  
+                            </div>
+                            <div class="part part_info_2 isactived ">
+                                <input type="number" placeholder="Prix" name="Prix">
+                                <br>
+                                <input type="number" placeholder="Prix Minimun" name="prix_min">
+                                <input type="number" placeholder="Prix Maximun" name="prix_max">
+                                <br>
+                                <div class="btn">
+                                    <button type="button" id="btn_precedent">Precedent</button>
+                                    <button type="button" id="btn_suivant">Suivant</button>
+                                </div>  
+                                    
+                            </div>
+                            <div class="part part_photo">
+                                <input type="file" name="files[]" id="file1">
+                                    <button type="button" onclick="uploadimage(1)" >Uplaod</button> 
+                                    <br>
+                                    <input type="file" name="files[]" id="file2">
+                                    <button type="button" onclick="uploadimage(2)">Uplaod</button> 
+                                    <br>
+                                    <input type="file" name="files[]" id="file3">
+                                    <button type="button" onclick="uploadimage(3)">Uplaod</button> 
+                                    <br>
+                                    <input type="hidden" name="imgurl1" id="url1">
+                                    <input type="hidden" name="imgurl2" id="url2">
+                                    <input type="hidden" name="imgurl3" id="url3">
+                                    <br>
+                                    <div class="wrap-circles">
+                                        <div class="circle per-0">
+                                            <div class="inner">0%</div>
+                                        </div>
+                                        <div class="circle per-25">
+                                            <div class="inner">25%</div>
+                                        </div>
+                                        <div class="circle per-50">
+                                            <div class="inner">50%</div>
+                                        </div>
+                                        <div class="circle per-75">
+                                            <div class="inner">75%</div>
+                                        </div>
+                                        <div class="circle per-100">
+                                            <div class="inner">100%</div>
+                                        </div>
+                                    </div>
+                            <input id="annoncer_btn" type="submit" value="soumettre" disabled>
+                            </div>  
+                        </form>
+                    </div>     
+                </div>
+           </div>
+
+        <div class="tab-container">
+            <div class="tabButton">
+                <button class="tablink" onclick="openPage('Home', this)">VosFavoris</button>
+                <button class="tablink" onclick="openPage('News', this)" id="defaultOpen">VosAnnonces</button>
+                <button class="tablink" onclick="openPage('Contact', this)">VosAbonnement</button>
+            </div>
+        </div>
+        
         <div id="Home" class="tabcontent">
         <h1 class="text" >Vos Favoris</h1>
         <p>Home is where the heart is..</p>
@@ -222,5 +287,6 @@
         <button class="dash-entre">Dashbord</button>
     </div>
     <script src="dash-js.js"></script>
+    <script src="modal.js"></script>
 </body>
 </html>
