@@ -393,13 +393,6 @@ option {
   .modal-connexion .modal-content .modal-header .close .fermer {
     font-size: 40px;
   }
-  .modal-connexion .modal-content .modal-body form .part_item {
-    position: relative;
-    top: -7%;
-    left: 10%;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
   .modal-connexion .modal-content .modal-body form .part_item .item {
     font-size: 15px;
   }
@@ -445,13 +438,6 @@ option {
   .modal-connexion .modal-content .modal-body form .part input[type="submit"]:hover {
     background-color: transparent;
     color: tomato;
-  }
-  .modal-connexion .modal-content .modal-body form .part .btn {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    left: -5%;
   }
   .modal-connexion .modal-content .modal-body form .part .btn button {
     margin: 0 5px;

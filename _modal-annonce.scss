@@ -205,10 +205,6 @@
 
             form{
                    .part_item{
-                        position: relative;
-                        top: -7%;
-                        left: 10%;
-                        transform: translateY(0%);
                         .item{
                             font-size: 15px;
                         }
@@ -257,8 +253,6 @@
                                 }
                             }  
                             .btn{
-                                flex-direction: row;
-                                left:-5%;
                                 button{
                                     margin: 0 5px;
                                     padding: 5px 25px;
