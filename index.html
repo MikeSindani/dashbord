@@ -49,6 +49,7 @@
                     <span class="close"> 
                         <span class="fermer">&times;</span>
                         <span class="text-search">Ajouter Une Annonce</span>
+                        <span></span>
                     </span>
                 </div>
                 <div class="modal-body">
@@ -57,11 +58,11 @@
                         </p>
                         <form action="">
                             <div class="part_item">
-                                <div class="item " id="item1">Details</div>
-                                <div class="item isactived-item" id="item2">Prix&Delai</div>
-                                <div class="item" id="item3">Photos</div>
+                                <div class="item item1 isactived-item" id="item1">Details</div>
+                                <div class="item item2 " id="item2">Prix&Delai</div>
+                                <div class="item item3" id="item3">Photos</div>
                             </div>
-                            <div class="part part_info ">
+                            <div class="part part_info isactived">
                                 <input type="text" placeholder="Titre" name="titre">
                                 <label for="cat">Categories:</label>
                                 <select id="cat" name="cat">
@@ -72,23 +73,23 @@
                                 <input type="number" placeholder="Quatite" name="quatite">
                                 <textarea rows="4" cols="50" name="descp"></textarea>
                                 <div class="btn">
-                                    <button type="button">Suivant</button>
+                                    <button type="button" onclick="Suivant(1,'400px')" >Suivant</button>
                                 </div>  
                             </div>
-                            <div class="part part_info_2 isactived ">
+                            <div class="part part_info_2">
                                 <input type="number" placeholder="Prix" name="Prix">
                                 <br>
                                 <input type="number" placeholder="Prix Minimun" name="prix_min">
                                 <input type="number" placeholder="Prix Maximun" name="prix_max">
                                 <br>
                                 <div class="btn">
-                                    <button type="button" id="btn_precedent">Precedent</button>
-                                    <button type="button" id="btn_suivant">Suivant</button>
+                                    <button type="button" id="btn_precedent"onclick="Precedent(2,'500px')">Precedent</button>
+                                    <button type="button" id="btn_suivant" onclick="Suivant(2,'500px')" >Suivant</button>
                                 </div>  
                                     
                             </div>
                             <div class="part part_photo">
-                                <input type="file" name="files[]" id="file1">
+                                    <input type="file" name="files[]" id="file1">
                                     <button type="button" onclick="uploadimage(1)" >Uplaod</button> 
                                     <br>
                                     <input type="file" name="files[]" id="file2">
@@ -101,7 +102,7 @@
                                     <input type="hidden" name="imgurl2" id="url2">
                                     <input type="hidden" name="imgurl3" id="url3">
                                     <br>
-                                    <div class="wrap-circles">
+                                    <div class="wrap-circles" style="display:none ;">
                                         <div class="circle per-0">
                                             <div class="inner">0%</div>
                                         </div>
@@ -118,12 +119,16 @@
                                             <div class="inner">100%</div>
                                         </div>
                                     </div>
-                            <input id="annoncer_btn" type="submit" value="soumettre" disabled>
+                            
+                                <div class="btn">
+                                    <button type="button" id="btn_precedent">Precedent</button>
+                                    <button  id="annoncer_btn"  disabled>Ajouter</button>
+                                </div> 
                             </div>  
                         </form>
-                    </div>     
-                </div>
-           </div>
+             </div>     
+        </div>
+     </div>
 
         <div class="tab-container">
             <div class="tabButton">

@@ -38,3 +38,48 @@ function openPage(pageName,elmnt) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
+// code for next page
+// get the number step 
+var item1 = document.querySelector(".item1");
+var item2 = document.querySelector(".item2");
+var item3 = document.querySelector(".item3");
+// get the div step button
+var part_info = document.querySelector(".part_info");
+var part_info_2 = document.querySelector(".part_info_2"); 
+var part_photo = document.querySelector(".part_photo"); 
+var modal_content = document.querySelector(".modal-content");
+// create function top change de step 
+function Suivant(a,height){
+    if(a == 1){
+      modal_content.style.height = height;
+     item1.classList.remove("isactived-item");
+      part_info.classList.remove("isactived");
+      item2.classList.add("isactived-item");
+      part_info_2.classList.add("isactived");
+    }
+    if(a == 2){
+      modal_content.style.height = height;
+     // item1.classList.add("isactived");
+      item2.classList.remove("isactived-item");
+      part_info_2.classList.remove("isactived");
+      item3.classList.add("isactived-item");
+      part_photo.classList.add("isactived");
+    }
+}
+function Precedent(a,height){
+    if(a == 2){
+      modal_content.style.height = height;
+      item2.classList.remove("isactived-item");
+      part_info_2.classList.remove("isactived");
+      item1.classList.add("isactived-item");
+      part_info.classList.add("isactived");
+    }
+    if(a == 3){
+      item3.classList.remove("isactived");
+      profil_info.classList.remove("isactived");
+      item1.classList.add("isactived");
+      item2.classList.add("isactived");
+      part_personnel.classList.add("isactived");
+     
+    }
+}
